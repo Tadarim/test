@@ -28,7 +28,7 @@ const TopBanner: React.FC<IProps> = () => {
     shallowEqual
   )
 
-  const beforeChangeHandler = useCallback((from: number, to: number) => {
+  const beforeChangeHandler = useCallback((_: number, to: number) => {
     setTimeout(() => {
       setCurrentIndex(to)
     }, 0)

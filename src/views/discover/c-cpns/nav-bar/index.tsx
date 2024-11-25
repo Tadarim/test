@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import type { FC, ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import { NavLink } from 'react-router-dom'
 import { NavWrapper } from './style'
 import { discoverMenu } from '@/assets/data/local_data'
@@ -8,7 +8,7 @@ interface IProps {
   children?: ReactNode
 }
 
-const NavBar: FC<IProps> = () => {
+const NavBar: React.FC<IProps> = () => {
   return (
     <NavWrapper>
       <div className="nav wrap-v1">
